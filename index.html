@@ -180,7 +180,116 @@
               <p class="section-subtitle">Welcome To Our Program</p>
 
               <h1 class="h1 hero-title">Your Way To USA !</h1>
+              <div id="offer-box" class="offer-box">
+                <div class="offer-content">
+                    <span class="close-btn" onclick="closeOfferBox()">&times;</span>
+                    <h2>Join the August group, 50% discount 🔥</h2>
+                    <p>Both USMLE step 1 course + Question bank solutions course for <s>$200</s></p>
+                    <h2 style="color: dodgerblue;">$100</h2>
+                    <p>This discount is available until 5/8/2024</p>
+                    <a href="YOUR_LINK_HERE" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+        
+            <button style="display: none; margin: auto; margin-bottom: 20px;" id="show-offer-btn" class="show-offer-btn" onclick="showOfferBox()">Show Offer</button>
+            <style>
 
+.offer-box {
+    display: none;
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    animation: boxAnimation 0.5s;
+}
+
+@keyframes boxAnimation {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.book-now-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #218838;
+}
+
+.show-offer-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.show-offer-btn:hover {
+    background-color: #0056b3;
+}
+
+.offer-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.offer-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+            </style>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        document.getElementById('offer-box').style.display = 'block';
+    }, 1000); // Show offer box after 1 second
+});
+
+function closeOfferBox() {
+    document.getElementById('offer-box').style.display = 'none';
+    document.getElementById('show-offer-btn').style.display = 'block';
+}
+
+function showOfferBox() {
+    document.getElementById('offer-box').style.display = 'block';
+    document.getElementById('show-offer-btn').style.display = 'none';
+}
+
+</script>
               <p class="hero-text" style="font-weight: bold;">
                 
                   Dr. Yaser Abdulkarim Alammar
