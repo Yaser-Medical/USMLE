@@ -1,786 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yaser USMLE</title>
 
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./fav2.svg" type="image/svg+xml" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yaser USMLE</title>
 
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="shortcut icon" href="./fav2.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<body id="top">
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:Yaser.Alammar98@gmail.com" class="contact-link">Yaser.Alammar98@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+201558904669" class="contact-link">+201558904669</a>
+          </li>
+        </ul>
 
-  <body id="top">
-    <!-- 
-    - #HEADER
-  -->
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61559702411584&mibextid=LQQJ4d" target="_blank"
+              class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/yaser_medical" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/yaser_alammar0" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL5x7bH-tNI8vByXx_XDHPCFGczLpUSqRl" target="_blank"
+              class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/message/BT47CZIG3SE4E1" target="_blank" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <ul class="contact-list">
-            <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
+    <div class="header-bottom" data-header>
+      <div class="container">
+        <a href="#" class="logo">Dr Yaser USMLE</a>
 
-              <a href="mailto:Yaser.Alammar98@gmail.com" class="contact-link"
-                >Yaser.Alammar98@gmail.com</a
-              >
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link data-lang-ar="الرئيسية" data-lang-en="Home">Home</a>
             </li>
-
-            <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
-
-              <a href="tel:+201558904669" class="contact-link">+201558904669</a>
+            <li>
+              <a href="#courses" class="navbar-link" data-nav-link data-lang-ar="خدماتنا"
+                data-lang-en="Services">Services</a>
+            </li>
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link data-lang-ar="من نحن " data-lang-en="About Us">About
+                Us</a>
+            </li>
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link data-lang-ar="تواصل معنا "
+                data-lang-en="Contact">Contact</a>
+            </li>
+            <li>
+              <div class="language-toggle">
+                <button id="lang-en" onclick="setLanguage('en')" style="display:none;">English</button>
+                <button id="lang-ar" onclick="setLanguage('ar')" style="display:none;">Arabic</button>
+              </div>
             </li>
           </ul>
+        </nav>
 
-          <ul class="social-list">
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=61559702411584&mibextid=LQQJ4d"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
 
-            <li>
-              <a
-                href="https://www.instagram.com/yaser_medical"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
+        <a href="https://wa.me/message/BT47CZIG3SE4E1" target="_blank" class="btn" data-lang-ar="احجز مقعدك !"
+          data-lang-en="Book Seat Now !">Book Seat !</a>
 
-            <li>
-              <a
-                href="https://x.com/yaser_alammar0"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.youtube.com/playlist?list=PL5x7bH-tNI8vByXx_XDHPCFGczLpUSqRl"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://wa.me/message/BT47CZIG3SE4E1"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-whatsapp"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
       </div>
+    </div>
+  </header>
 
-      <div class="header-bottom" data-header>
+  <main>
+    <article>
+      <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png')"
+        aria-label="hero">
         <div class="container">
-          <a href="#" class="logo">Dr Yaser USMLE </a>
+          <div class="hero-content" style="text-align: center;">
+            <p class="section-subtitle" data-lang-en="Welcome To Our Program" data-lang-ar="مرحبًا بكم في برنامجنا">
+              Welcome To Our Program
+            </p>
 
-          <nav class="navbar container" data-navbar>
-            <ul class="navbar-list">
-              <li>
-                <a href="#home" class="navbar-link" data-nav-link>Home</a>
-              </li>
-
-              <li>
-                <a href="#courses" class="navbar-link" data-nav-link
-                  >Services</a
-                >
-              </li>
-
-              <li>
-                <a href="#service" class="navbar-link" data-nav-link>About Us</a>
-              </li>
-
-              <!-- <li>
-              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-            </li> -->
-
-              <li>
-                <a href="#contact" class="navbar-link" data-nav-link
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <a
-            href="https://wa.me/message/BT47CZIG3SE4E1"
-            target="_blank"
-            class="btn"
-            >Book Your Seat !</a
-          >
-
-          <button
-            class="nav-toggle-btn"
-            aria-label="Toggle menu"
-            data-nav-toggler
-          >
-            <ion-icon
-              name="menu-sharp"
-              aria-hidden="true"
-              class="menu-icon"
-            ></ion-icon>
-            <ion-icon
-              name="close-sharp"
-              aria-hidden="true"
-              class="close-icon"
-            ></ion-icon>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <article>
-        <!-- 
-        - #HERO
-      -->
-
-        <section
-          class="section hero"
-          id="home"
-          style="background-image: url('./assets/images/hero-bg.png')"
-          aria-label="hero"
-        >
-          <div class="container">
-            <div class="hero-content" style="text-align: center;">
-              <p class="section-subtitle">Welcome To Our Program</p>
-
-              <h1 class="h1 hero-title">Your Way To USA !</h1>
+            <h1 class="h1 hero-title" data-lang-en="Your Way To USA !" data-lang-ar="طريقك إلى الولايات المتحدة!">
+              <!-- Your Way To USA !
+              </h1>
               <div id="offer-box" class="offer-box">
                 <div class="offer-content">
                     <span class="close-btn" onclick="closeOfferBox()">&times;</span>
-                    <h2>Join the August group, 50$ discount 🔥</h2>
-                    <p>USMLE Step 1 Course <s>$150</s></p>
+                    <h2 data-lang-ar="انضم إلى مجموعة أغسطس، خصم 50 دولار 🔥" data-lang-en="Join the August group, 50$ discount 🔥">Join the August group, 50$ discount 🔥</h2>
+                    <p data-lang-ar="USMLE Step 1 Course " data-lang-en="USMLE Step 1 Course">USMLE Step 1 Course <s>$150</s></p>
                     <h2 style="color: dodgerblue;">$100</h2>
                     <br/>
-                    <p>Both USMLE Step 1 Course + Question Bank Solutions Course For <s>$200</s></p>
+                    <p data-lang-ar="Both USMLE Step 1 Course + Question Bank Solutions Course For"" data-lang-en="Both USMLE Step 1 Course + Question Bank Solutions Course For">Both USMLE Step 1 Course + Question Bank Solutions Course For <s>$200</s></p>
                     <h2 style="color: dodgerblue;">$150</h2>
-                    <p>This discount is available until 5/8/2024</p>
-                    <a href="https://docs.google.com/forms/d/1v51lRU1qrc8E_gtgspYvDhedTvu0xJwT6Jb8CluQe4g/viewform?edit_requested=true" class="book-now-btn">Book Now</a>
+                    <p data-lang-ar="هذا الخصم متاح حتى 5/8/2024 " data-lang-en="This discount is available until 5/8/2024" >This discount is available until 5/8/2024</p>
+                    <a href="YOUR_LINK_HERE" class="book-now-btn" data-lang-ar="احجز الآن ! " data-lang-en="Book Now" >Book Now</a>
                 </div>
-            </div>
-        
-            <button style="display: none; margin: auto; margin-bottom: 20px;" id="show-offer-btn" class="show-offer-btn" onclick="showOfferBox()">Show Offer</button>
-            <style>
+            </div> -->
 
-.offer-box {
-    display: none;
-    position: relative;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-    animation: boxAnimation 0.5s;
-}
+              <button data-lang-ar="" data-lang-en="" style="display: none; margin: auto; margin-bottom: 20px;"
+                id="show-offer-btn" class="show-offer-btn" onclick="showOfferBox()">Show Offer</button>
+              <style>
+                .offer-box {
+                  display: none;
+                  position: relative;
+                  margin: 20px auto;
+                  padding: 20px;
+                  border: 1px solid #888;
+                  width: 80%;
+                  max-width: 600px;
+                  text-align: center;
+                  border-radius: 10px;
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                  background-color: #fff;
+                  animation: boxAnimation 0.5s;
+                }
 
-@keyframes boxAnimation {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
-}
+                @keyframes boxAnimation {
+                  from {
+                    transform: scale(0);
+                  }
 
-.close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
+                  to {
+                    transform: scale(1);
+                  }
+                }
 
-.close-btn:hover,
-.close-btn:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+                .close-btn {
+                  color: #aaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+                }
 
-.book-now-btn {
-    display: inline-block;
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
+                .close-btn:hover,
+                .close-btn:focus {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
 
-.book-now-btn:hover {
-    background-color: #218838;
-}
+                .book-now-btn {
+                  display: inline-block;
+                  background-color: #28a745;
+                  color: white;
+                  padding: 10px 20px;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  margin-top: 20px;
+                  transition: background-color 0.3s;
+                }
 
-.show-offer-btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+                .book-now-btn:hover {
+                  background-color: #218838;
+                }
 
-.show-offer-btn:hover {
-    background-color: #0056b3;
-}
+                .show-offer-btn {
+                  display: inline-block;
+                  background-color: #007bff;
+                  color: white;
+                  padding: 10px 20px;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  margin: 20px;
+                  cursor: pointer;
+                  transition: background-color 0.3s;
+                }
 
-.offer-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+                .show-offer-btn:hover {
+                  background-color: #0056b3;
+                }
 
-.offer-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-            </style>
-        
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        document.getElementById('offer-box').style.display = 'block';
-    }, 1000); // Show offer box after 1 second
-});
+                .offer-content h2 {
+                  font-size: 24px;
+                  margin-bottom: 10px;
+                }
 
-function closeOfferBox() {
-    document.getElementById('offer-box').style.display = 'none';
-    document.getElementById('show-offer-btn').style.display = 'block';
-}
+                .offer-content p {
+                  font-size: 18px;
+                  margin-bottom: 20px;
+                }
+              </style>
 
-function showOfferBox() {
-    document.getElementById('offer-box').style.display = 'block';
-    document.getElementById('show-offer-btn').style.display = 'none';
-}
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  setTimeout(function () {
+                    document.getElementById('offer-box').style.display = 'block';
+                  }, 1000); // Show offer box after 1 second
+                });
 
-</script>
-              <p class="hero-text" style="font-weight: bold;">
-                
-                  Dr. Yaser Abdulkarim Alammar
-                
-                <!-- <a style="color: gray"> Doctor at Cairo University Hospital </a> -->
+                function closeOfferBox() {
+                  document.getElementById('offer-box').style.display = 'none';
+                  document.getElementById('show-offer-btn').style.display = 'block';
+                }
+
+                function showOfferBox() {
+                  document.getElementById('offer-box').style.display = 'block';
+                  document.getElementById('show-offer-btn').style.display = 'none';
+                }
+
+              </script>
+              <p data-lang-ar="دكتور/ ياسر عبدالكريم العمار" data-lang-en="Dr. Yaser Abdulkarim Alammar"
+                class="hero-text" style="font-weight: bold;">
+
+                Dr. Yaser Abdulkarim Alammar
+
               </p>
 
-              <!-- <form action="" class="hero-form">
-              <input type="email" name="mohamed.nazeh@outlook.com" aria-label="gmail" placeholder="Your Email Address..." required
-                class="email-field">
 
-              <button type="submit" class="btn">Get Call Back</button>
-            </form> -->
-            </div>
-
-            <figure class="hero-banner">
-              <img
-                src="./assets/images/img1.PNG"
-                width="587"
-                height="839"
-                alt="hero banner"
-                class="w-100"
-              />
-            </figure>
           </div>
-        </section>
 
-        <!-- 
+          <figure class="hero-banner">
+            <img src="./assets/images/img1.PNG" width="587" height="839" alt="hero banner" class="w-100" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- 
         - #SERVICE
       -->
 
-        <!-- 
+      <!-- 
         - #ABOUT
       -->
 
-        <section class="section about" id="about" aria-label="about">
-          <div class="container">
-           
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
 
-            <div class="about-content">
-              <p class="section-subtitle">About Us</p>
 
-              <h2 class="h2 section-title" style="font-size: 45px;">
-                Your USMLE Journey, Our Commitment
-              </h2>
+          <div class="about-content">
+            <p class="section-subtitle" data-lang-ar="معلومات عنا " data-lang-en="About Us">About Us</p>
 
-              <p class="section-text section-text-1">
-                As a dedicated doctor and instructor, I understand the
-                challenges and intricacies of preparing for the USMLE exams.
-                <br />
-                <br />
-                This course is designed to provide students with a comprehensive
-                understanding of the application process, exam structure, and
-                essential study strategies.
-                <br />
-                <br />
-                With a focus on clarity and practical advice, I aim to guide you
-                through each step, ensuring you are well-prepared and confident.
-              </p>
+            <h2 class="h2 section-title" style="font-size: 45px;" data-lang-ar="رحلتك مع USMLE، إلتزامنا "
+              data-lang-en="Your USMLE Journey, Our Commitment">
+              Your USMLE Journey, Our Commitment
+            </h2>
 
-              <p class="section-text">
-                Join me to gain valuable insights, personalized support, and the
-                knowledge you need to succeed in your USMLE journey.
-                <br />
-              </p>
+            <p class="section-text section-text-1"
+              data-lang-ar="بصفتي طبيباً ومدرباً مكرساً، أفهم التحديات والتفاصيل الدقيقة للاستعداد لامتحانات USMLE. "
+              data-lang-en="As a dedicated doctor and instructor, I understand the challenges and intricacies of preparing for the USMLE exams.">
+              As a dedicated doctor and instructor, I understand the challenges and intricacies of preparing for the
+              USMLE exams.
+              <br />
+              <br />
+            <p data-lang-ar=" تم تصميم هذه الدورة لتزويد الطلاب بفهم شامل لعملية التقديم، وهيكل الامتحان، واستراتيجيات الدراسة الأساسية. "
+              data-lang-en="This course is designed to provide students with a comprehensive understanding of the application process, exam structure, and essential study strategies.">
+              This course is designed to provide students with a comprehensive understanding of the application process,
+              exam structure, and essential study strategies.</p>
+            <br />
+            <br />
+            <p data-lang-ar=" مع التركيز على الوضوح والنصائح العملية، أهدف إلى إرشادك خلال كل خطوة، وضمان أنك مستعد وواثق. "
+              data-lang-en="With a focus on clarity and practical advice, I aim to guide you through each step, ensuring you are well-prepared and confident.">
+              With a focus on clarity and practical advice, I aim to guide you through each step, ensuring you are
+              well-prepared and confident.
+            </p>
+            <br />
+            <br />
+            <p class="section-text"
+              data-lang-ar="انضم إليّ للحصول على رؤى قيمة ودعم مخصص والمعرفة التي تحتاجها للنجاح في رحلة USMLE الخاصة بك."
+              data-lang-en="Join me to gain valuable insights, personalized support, and the knowledge you need to succeed in your USMLE journey.">
+              Join me to gain valuable insights, personalized support, and the knowledge you need to succeed in your
+              USMLE journey.
+              <br />
+            </p>
 
-              <!-- <a
+            <!-- <a
                 href="https://www.instagram.com/yaser_medical"
                 target="_blank"
                 class="btn"
                 >More Information</a
               > -->
-            </div>
-            <figure class="about-banner">
-              <img
-                src="./assets/images/pngegg.png"
-                width="470"
-                height="538"
-                loading="lazy"
-                alt="about banner"
-                class="w-100"
-              />
-            </figure>
           </div>
-        </section>
+          <figure class="about-banner">
+            <img src="./assets/images/pngegg.png" width="470" height="538" loading="lazy" alt="about banner"
+              class="w-100" />
+          </figure>
+        </div>
+      </section>
 
-        <!-- 
+      <!-- 
         - #DOCTOR
       -->
 
-        <style>
-          .video-list {
-            display: flex;
-            overflow-x: auto;
-            padding: 1rem;
-            list-style: none;
-            gap: 1rem;
-          }
+      <style>
+        .video-list {
+          display: flex;
+          overflow-x: auto;
+          padding: 1rem;
+          list-style: none;
+          gap: 1rem;
+        }
 
-          .video-item {
-            flex: 0 0 auto;
-          }
+        .video-item {
+          flex: 0 0 auto;
+        }
 
-          .video-item iframe {
-            width: 500px;
-            height: 315px;
-          }
+        .video-item iframe {
+          width: 500px;
+          height: 315px;
+        }
 
-          .video-list::-webkit-scrollbar {
-            height: 8px;
-          }
+        .video-list::-webkit-scrollbar {
+          height: 8px;
+        }
 
-          .video-list::-webkit-scrollbar-track {
-            background: #f1f1f1;
-          }
+        .video-list::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
 
-          .video-list::-webkit-scrollbar-thumb {
-            background: #888;
-          }
+        .video-list::-webkit-scrollbar-thumb {
+          background: #888;
+        }
 
-          .video-list::-webkit-scrollbar-thumb:hover {
-            background: #555;
-          }
-        </style>
-
-
+        .video-list::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      </style>
 
 
 
-        <section class="section doctor" aria-label="doctor">
-          <div class="container">
-            <ul class="has-scrollbar">
-              <!-- Existing Doctor Cards Here -->
-            </ul>
 
-            <!-- <p class="section-subtitle text-center">Our Videos</p> -->
-            <h2 class="h2 section-title text-center">
-              Free Immunology Trial Videos
-            </h2>
 
-            <ul class="video-list">
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/6TnEFyeFFF8"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/Z-Yeu3wfgC4"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/NmX-5YmqtkI"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/aLLX3xrqgjE"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/nkhKI89oQ-8"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/pYasuY9dIpQ"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/NiETKPNejDk"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/KILLSOzlGDw"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <li class="video-item">
-                <iframe
-                  src="https://www.youtube.com/embed/pq3fQ7xeurM"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </li>
-            </ul>
-          </div>
-        
-        </section>
+      <section class="section doctor" aria-label="doctor">
+        <div class="container">
+          <ul class="has-scrollbar">
+            <!-- Existing Doctor Cards Here -->
+          </ul>
+
+          <!-- <p class="section-subtitle text-center">Our Videos</p> -->
+          <h2 class="h2 section-title text-center" data-lang-ar="" data-lang-en="">
+            Free Immunology Trial Videos
+          </h2>
+
+          <ul class="video-list">
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/6TnEFyeFFF8" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/Z-Yeu3wfgC4" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/NmX-5YmqtkI" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/aLLX3xrqgjE" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/nkhKI89oQ-8" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/pYasuY9dIpQ" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/NiETKPNejDk" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/KILLSOzlGDw" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="video-item">
+              <iframe src="https://www.youtube.com/embed/pq3fQ7xeurM" frameborder="0" allowfullscreen></iframe>
+            </li>
+          </ul>
+        </div>
+
+      </section>
 
 
 
 
 
 
-        
-        <!-- 
+
+      <!-- 
         - #CTA
       -->
 
-        <section class="section cta" aria-label="cta" style="margin-top: 50px;">
-          <div class="container">
-            <figure class="cta-banner">
-              <img
-                src="./assets/images/cousePNG.png"
-                width="1056"
-                height="1076"
-                loading="lazy"
-                alt="cta banner"
-                class="w-100"
-              />
-            </figure>
+      <section class="section cta" aria-label="cta" style="margin-top: 50px;">
+        <div class="container">
+          <figure class="cta-banner">
+            <img src="./assets/images/cousePNG.png" width="1056" height="1076" loading="lazy" alt="cta banner"
+              class="w-100" />
+          </figure>
 
-            <div class="cta-content">
-              <p class="section-subtitle">Book Courses</p>
+          <div class="cta-content">
+            <p class="section-subtitle" data-lang-ar="حجز الكورسات  " data-lang-en="Book Courses ">Book Courses </p>
 
-              <h2 class="h2 section-title">
-                Limited Seats Available for August and September <br/> 
-                 <!-- <p style="font-size: 23px;">Book </p> -->
-                            </h2>
-              <!-- <p class="section-subtitle" style="color: rgb(255, 255, 255); font-size: 30PX;">Limited Seats Available for August and September. Book Now!</p> -->
+            <h2 class="h2 section-title" data-lang-ar="المقاعد محدودة لشهري أغسطس وسبتمبر"
+              data-lang-en=" Limited Seats Available for August and September">
+              Limited Seats Available for August and September <br />
+              <!-- <p style="font-size: 23px;">Book </p> -->
+            </h2>
+            <!-- <p class="section-subtitle" style="color: rgb(255, 255, 255); font-size: 30PX;">Limited Seats Available for August and September. Book Now!</p> -->
 
-              <a style="font-size: 25px;"
-                href="https://wa.me/message/BT47CZIG3SE4E1"
-                target="_blank"
-                class="btn"
-                >Book Now!</a
-              >
-            </div>
+            <a style="font-size: 25px;" href="https://wa.me/message/BT47CZIG3SE4E1" target="_blank" class="btn"
+              data-lang-ar=" احجز الآن !   " data-lang-en="Book Now !">Book
+              Now!</a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- 
+      <!-- 
         - #BLOG
       -->
 
-        <style>
-          /* Add these styles to your existing CSS file */
+      <style>
+        /* Add these styles to your existing CSS file */
 
-          .course-container {
-            display: flex;
-            gap: 5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-          }
+        .course-container {
+          display: flex;
+          gap: 5rem;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
 
-          .course-card {
-            width: 38%;
-            padding: 1rem;
-            background-color: rgb(255, 255, 255);
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-          }
+        .course-card {
+          width: 38%;
+          padding: 1rem;
+          background-color: rgb(255, 255, 255);
+          border-radius: 0.5rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
 
-          .course-card img {
-            border-radius: 0.5rem;
-            margin-bottom: 1rem;
-          }
+        .course-card img {
+          border-radius: 0.5rem;
+          margin-bottom: 1rem;
+        }
 
-          .pricing-container {
-            margin-top: 2rem;
-            text-align: center;
-          }
+        .pricing-container {
+          margin-top: 2rem;
+          text-align: center;
+        }
 
-          .pricing-list {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0;
-          }
+        .pricing-list {
+          list-style: none;
+          padding: 0;
+          margin: 1rem 0;
+        }
 
-          .pricing-list li {
-            margin: 0.5rem 0;
-          }
-        </style>
+        .pricing-list li {
+          margin: 0.5rem 0;
+        }
+      </style>
 
-        <section class="section courses" id="courses" aria-label="courses">
-          <div class="container">
-            <!-- <p class="section-subtitle text-center">Our Courses</p> -->
-            <h2 class="h2 section-title text-center">
-              Explore Our Courses
-            </h2>
+      <section class="section courses" id="courses" aria-label="courses">
+        <div class="container">
+          <!-- <p class="section-subtitle text-center">Our Courses</p> -->
+          <h2 class="h2 section-title text-center" data-lang-ar="تعرف على الدورات المتاحة"
+            data-lang-en="Explore Our Courses">
+            Explore Our Courses
+          </h2>
 
-            <div class="course-container" style="margin-top: 20px">
-              <div class="course-card">
-                <div class="card-banner img-holder" style="--width: 460">
-                  <img
-                    src="./assets/images/course-1.png"
-                    width="460"
-                    height="500"
-                    loading="lazy"
-                    alt="Online USMLE Step1 Course"
-                    class="img-cover"
-                  />
-                </div>
-                <h3 class="h3" style="margin-top: 15px">Course 1 : <br/> <br/>USMLE Step1 </h3>
-                <p class="card-subtitle" style="margin-top: 15px;">
-                 - Mixed Online And Offline Videos.
-                 <br/>
-                 <br/>
-                 - Available Videos For 2 Years.
-                 <br/>
-                 <br/>
-                 - Includes Free USMLE Step1 PDF.  
-                </p>
+          <div class="course-container" style="margin-top: 20px">
+            <div class="course-card">
+              <div class="card-banner img-holder" style="--width: 460">
+                <img src="./assets/images/course-1.png" width="460" height="500" loading="lazy"
+                  alt="Online USMLE Step1 Course" class="img-cover" />
               </div>
+              <h3 class="h3" style="margin-top: 15px" data-lang-ar="الدورة الأولى : " data-lang-en="Course 1 :">Course 1
+                :
+                <br /> <br />
+              </h3>
+              <br /> <br />
+              <h3 class="h3">USMLE Step1 </h3>
 
-              <div class="course-card">
-                <div class="card-banner img-holder" style="--width: 460">
-                  <img
-                    src="./assets/images/course-2.png"
-                    width="460"
-                    height="500"
-                    loading="lazy"
-                    alt="Question Bank Solution Course"
-                    class="img-cover"
-                  />
-                </div>
-                <h3 class="h3" style="margin-top: 15px">
-                 Course 2 : <br/> <br/> Complete Solutions For Question Bank
-                </h3>
-                <p class="card-subtitle">
-               
-                 <br/>
-                 - Lectures To Solve All Questions.
-                 <br/>
-                 <br/>
-                 - Solutions To More Than 3600 Questions.
-                </p>
+              <p class="card-subtitle" style="margin-top: 15px;" data-lang-ar="- محاضرات متنوعة أونلاين وأوفلاين."
+                data-lang-en="Mixed Online And Offline Videos.">
+
+                - Mixed Online And Offline Videos.
+
+              </p>
+              <br />
+              <br />
+              <p data-lang-ar="- مقاطع الفيديو متاحة لمدة عامين. " data-lang-en="- Available Videos For 2 Years. ">
+                - Available Videos For 2 Years.
+
+              </p>
+              <br />
+              <br />
+              <p data-lang-ar="- يشمل PDF مجاني لـ USMLE Step 1.  " data-lang-en="- Includes Free USMLE Step1 PDF.  ">
+                - Includes Free USMLE Step1 PDF.
+
+              </p>
+
+            </div>
+
+
+
+
+            <div class="course-card">
+              <div class="card-banner img-holder" style="--width: 460">
+                <img src="./assets/images/course-2.png" width="460" height="500" loading="lazy"
+                  alt="Question Bank Solution Course" class="img-cover" />
               </div>
+              <h3 class="h3" style="margin-top: 15px" data-lang-ar="الدورة الثانية : " data-lang-en="Course 2 :">Course
+                2 :
+                <br /> <br />
+              </h3>
+              <br /> <br />
+              <h3 class="h3">Question Bank Solution Course </h3>
 
-              <!-- <div class="course-card">
+              <p class="card-subtitle" style="margin-top: 15px;" data-lang-ar="- محاضرات لحل جميع الأسئلة."
+                data-lang-en="- Lectures To Solve All Questions.">
+
+                - Lectures To Solve All Questions.
+
+              </p>
+              <br />
+              <br />
+              <p data-lang-ar="- حلول لأكثر من 3600 سؤال." data-lang-en="- Solutions To More Than 3600 Questions. ">
+                - Solutions To More Than 3600 Questions.
+
+              </p>
+
+
+            </div>
+
+
+
+
+            <!-- <div class="course-card">
               <div class="card-banner img-holder" style="--width: 460; --height: 500;">
                 <img src="./assets/images/course-3.png" width="460" height="500" loading="lazy" alt="USMLE Step1 PDF" class="img-cover">
               </div>
               <h3 class="h3">USMLE Step1 PDF</h3>
               <p class="card-subtitle">A comprehensive resource that includes everything you need for the exam</p>
             </div> -->
-            </div>
-
-            <div class="pricing-container" style="margin-top: 40px;">
-              <h2 class="h2 section-title text-center">The Cost</h2>
-              <ul class="pricing-list">
-                <li>USMLE Step 1 course: $150</li>
-                <li> Question Bank Solution Course: $100</li>
-
-                <li style="font-size: large; font-weight: bold;">
-                  USMLE Step 1 course + Question Bank Solution Course: $200 Only !
-                </li>
-              </ul>
-              <h3 class="h3 text-center" style="margin-top: 25px;">For groups (5 and more):</h3>
-              <ul class="pricing-list">
-                <li>USMLE Step 1 course: $100</li>
-                <li  style="font-size: large; font-weight: bold;">
-                  USMLE Step 1 course + Question Bank Solution Course: $150 only !
-                </li>
-              </ul>
-            </div>
-            <a style="margin-top: 20px;"
-              href="https://wa.me/message/BT47CZIG3SE4E1"
-              target="_blank"
-              class="btn"
-              >Book Now !</a
-            >
           </div>
-        </section>
-      </article>
-    </main>
+
+          <div class="pricing-container" style="margin-top: 40px;">
+            <h2 class="h2 section-title text-center" data-lang-ar="التكلفة :" data-lang-en="The Cost :">The Cost :</h2>
+            <ul class="pricing-list">
+              <li>USMLE Step 1 course: $150</li>
+              <li> Question Bank Solution Course: $100</li>
+
+              <li style="font-size: large; font-weight: bold;">
+                USMLE Step 1 course + Question Bank Solution Course: $200 Only !
+              </li>
+            </ul>
+            <h3 class="h3 text-center" style="margin-top: 25px;" data-lang-ar="ولو قدمت انت وخمسة من صحابك ممكن تستفاد بخصم 50% " data-lang-en="For groups (5 and more):">For groups (5 and more):</h3>
+            <ul class="pricing-list">
+              <li>USMLE Step 1 course: $100</li>
+              <li style="font-size: large; font-weight: bold;">
+                USMLE Step 1 course + Question Bank Solution Course: $150 only !
+              </li>
+            </ul>
+          </div>
+          <a style="margin-top: 20px;" href="https://wa.me/message/BT47CZIG3SE4E1" target="_blank" class="btn"
+            data-lang-ar="إحجــز الآن ! " data-lang-en="Book Now !">Book Now !</a>
+        </div>
+      </section>
+    </article>
+  </main>
 
 
 
-    <section class="section service" id="service" aria-label="service" style="margin-bottom: 50px;">
-      <div class="container">
-    
-        <!-- <p class="section-subtitle text-center">Our Services</p> -->
-    
-        <h2 class="h2 section-title text-center">About Dr Yaser </h2>
-    
-        <ul class="service-list">
-    
-          <li>
-            <div class="service-card">
-    
-              <!-- <div class="card-icon">
+  <section class="section service" id="service" aria-label="service" style="margin-bottom: 50px;">
+    <div class="container">
+
+      <!-- <p class="section-subtitle text-center">Our Services</p> -->
+
+      <h2 class="h2 section-title text-center" data-lang-ar="معلومات عن دكتور ياســر" data-lang-en="About Dr Yaser ">
+        About Dr Yaser </h2>
+
+      <ul class="service-list">
+
+        <li>
+          <div class="service-card">
+
+            <!-- <div class="card-icon">
                 <img src="./assets/images/service-icon-1.png" width="100" height="100" loading="lazy"
                   alt="service icon" class="w-100">
               </div> -->
-    
-              <div>
-                <h3 class="h3 card-title">3 Years Experience in Medical Courses</h3>
-    
-                <p class="card-text">
-                  Experienced in teaching Physiology, Immunology, and USMLE Step 1.
-                </p>
-              </div>
-    
+
+            <div>
+              <h3 class="h3 card-title" data-lang-ar="3 سنوات من الخبرة في الدورات الطبية"
+                data-lang-en="3 Years Experience in Medical Courses">3 Years Experience in Medical Courses</h3>
+
+              <p class="card-text" data-lang-ar="ذو خبرة في تدريس علم وظائف الأعضاء، علم المناعة، وUSMLE Step 1."
+                data-lang-en="Experienced in teaching Physiology, Immunology, and USMLE Step 1.">
+                ذو خبرة في تدريس علم وظائف الأعضاء، علم المناعة، وUSMLE Step 1.
+              </p>
             </div>
-          </li>
-    
-          <li>
-            <div class="service-card">
-    
-              <!-- <div class="card-icon">
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <!-- <div class="card-icon">
                 <img src="./assets/images/service-icon-2.png" width="100" height="100" loading="lazy"
                   alt="service icon" class="w-100">
               </div> -->
-    
-              <div>
-                <h3 class="h3 card-title">Passed USMLE Exam</h3>
-    
-                <!-- <p class="card-text">
+
+            <div>
+              <h3 class="h3 card-title" data-lang-ar="نجح في اجتيـاز امتحـان USMLE" data-lang-en="Passed USMLE Exam">
+                Passed USMLE Exam</h3>
+
+              <!-- <p class="card-text">
                   Successfully cleared the USMLE Step 1 exam.
                 </p> -->
-              </div>
-    
             </div>
-          </li>
-    
-          <li>
-            <div class="service-card">
-    
-              <!-- <div class="card-icon">
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <!-- <div class="card-icon">
                 <img src="./assets/images/service-icon-3.png" width="100" height="100" loading="lazy"
                   alt="service icon" class="w-100">
               </div> -->
-    
-              <div>
-                <h3 class="h3 card-title">Medical Content Creator</h3>
-    
-                <p class="card-text">
-                  Creating medical content on <a href="https://www.instagram.com/yaser_medical" target="_blank" style="color: blue;">Instagram</a> since 2019 with over 70k followers.
-                  <br/>
-                  <br/>
-                  Sharing medical content on <a href="https://t.me/yaser_usmle" target="_blank" style="color: blue;">Telegram</a>  with over 7k followers.
 
-                </p>
-              </div>
-    
+            <div>
+              <h3 class="h3 card-title" data-lang-ar="صاحب محتوى طبي مبتكر " data-lang-en="Medical Content Creator">
+                Medical Content Creator</h3>
+
+              <p class="card-text" data-lang-ar="منشئ محتوى طبي على " data-lang-en="Creating medical content on">
+                Creating medical content on </P>
+
+              <a href="https://www.instagram.com/yaser_medical" target="_blank" style="color: blue;">Instagram</a>
+              <p data-lang-ar="منذ عام 2019 ولديه أكثر من 70 ألف متابع."
+                data-lang-en="since 2019 with over 70k followers.">
+                since 2019 with over 70k followers.
+              </p>
+              <br />
+              <br />
+              <p data-lang-ar=" يقوم بعرض محتـوى طبي على  " data-lang-en="Sharing medical content on"> Sharing medical
+                content on </p> <a href="https://t.me/yaser_usmle" target="_blank" style="color: blue;">Telegram</a>
+              <p data-lang-ar="ولديه أكثر من 7 آلاف متابع " data-lang-en="with over 7k followers.">with over 7k
+                followers.
+              </p>
+              
             </div>
-          </li>
-    
-          <li class="service-banner">
-            <figure>
-              <img src="assets/images/pngegg.png" width="409" height="467" loading="lazy"
-                alt="service banner" class="w-100">
-            </figure>
-          </li>
-    
-    
-          <li>
-            <div class="service-card">
-    
-              <!-- <div class="card-icon">
+
+          </div>
+        </li>
+
+        <li class="service-banner">
+          <figure>
+            <img src="assets/images/pngegg.png" width="409" height="467" loading="lazy" alt="service banner"
+              class="w-100">
+          </figure>
+        </li>
+
+
+        <li>
+          <div class="service-card">
+
+            <!-- <div class="card-icon">
                 <img src="./assets/images/service-icon-5.png" width="100" height="100" loading="lazy"
                   alt="service icon" class="w-100">
               </div> -->
-    
-              <div>
-                <h3 class="h3 card-title">General & Pediatric Surgery Researcher</h3>
-    
-                <p class="card-text">
-                  Conducting research in general and pediatric surgery.
-                </p>
-              </div>
-    
+
+            <div>
+              <h3 class="h3 card-title" data-lang-ar="باحث في الجراحة العامة وجراحة الأطفال" data-lang-en="General & Pediatric Surgery Researcher">General & Pediatric Surgery Researcher</h3>
+
+              <p class="card-text" data-lang-ar="قام بإجـراء أبحاث في الجراحة العامة وجراحة الأطفال."
+               data-lang-en="Conducting research in general and pediatric surgery.">
+                Conducting research in general and pediatric surgery.
+              </p>
             </div>
-          </li>
-    
-          <!-- <li>
+
+          </div>
+        </li>
+
+        <!-- <li>
             <div class="service-card">
 
     
@@ -794,60 +717,60 @@ function showOfferBox() {
     
             </div>
           </li> -->
-    
-        </ul>
-    
-      </div>
-    </section>
+
+      </ul>
+
+    </div>
+  </section>
 
 
-    <!-- 
+  <!-- 
     - #FOOTER
   -->
 
-    <footer class="footer">
-      <div class="footer-top section" style="padding: 50px">
-        <div class="container">
-          <div class="footer-brand">
-            <a href="#" class="logo" style="margin-top: 50px">USMLE Program</a>
-          </div>
+  <footer class="footer">
+    <div class="footer-top section" style="padding: 50px">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="margin-top: 50px">USMLE Program</a>
+        </div>
 
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Other Links</p>
-            </li>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title" data-lang-ar=" روابط أخـرى " data-lang-en="Other Links">Other Links</p>
+          </li>
 
-            <li>
-              <a href="#home" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
+          <li>
+            <a href="#home" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
 
-                <span class="span">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#courses" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
+              <span class="span" data-lang-ar="الرئيسيـة" data-lang-en="Home ">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#courses" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
 
-                <span class="span">Services</span>
-              </a>
-            </li>
-            <li>
-              <a href="#service" class="footer-link">
-                <ion-icon name="add-outline"></ion-icon>
+              <span class="span" data-lang-ar="الخدمات التي نقدمهـا" data-lang-en="Services">Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#service" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
 
-                <span class="span">About Us</span>
-              </a>
-            </li>
+              <span class="span" data-lang-ar="معلومات عن دكتور ياســر" data-lang-en=" About Dr- Yaser">About Us</span>
+            </a>
+          </li>
 
-           
-          </ul>
 
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title" id="contact">Contact Us</p>
-            </li>
+        </ul>
 
-            <!-- <li class="footer-item">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title" id="contact" data-lang-ar="تواصل معـنا " data-lang-en="Contact Us">Contact Us</p>
+          </li>
+
+          <!-- <li class="footer-item">
               <div class="item-icon">
                 <ion-icon name="location-outline"></ion-icon>
               </div>
@@ -855,118 +778,111 @@ function showOfferBox() {
               <address class="item-text">Cairo, Egypt</address>
             </li> -->
 
-            <li class="footer-item">
-              <div class="item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
 
-              <a href="https://wa.me/message/BT47CZIG3SE4E1" class="footer-link">+201558904669</a>
-            </li>
+            <a href="https://wa.me/message/BT47CZIG3SE4E1" class="footer-link" data-lang-ar="201558904669+" data-lang-en="+201558904669">+201558904669</a>
+          </li>
 
-            <li class="footer-item">
-              <div class="item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
 
-              <a href="mailto:Yaser.Alammar98@gmail.com" class="footer-link"
-                >Yaser.Alammar98@gmail.com</a
-              >
-            </li>
-          </ul>
-        </div>
+            <a href="mailto:Yaser.Alammar98@gmail.com" class="footer-link">Yaser.Alammar98@gmail.com</a>
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="copyright" style="font-size: small">
-            &copy; 2024 All Rights Reserved by
-            <a href="https://www.instagram.com/hammod._74/" target="_blank"
-              >Eng-Mohammed Alammar.</a
-            >
-          </p>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright" style="font-size: small" >
+          &copy; 2024 All Rights Reserved by
+          <a href="https://www.instagram.com/hammod._74/" target="_blank">Eng-Mohammed Alammar.</a>
+        </p>
 
-          <ul class="social-list">
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=61559702411584&mibextid=LQQJ4d"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61559702411584&mibextid=LQQJ4d" target="_blank"
+              class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-            <li>
-              <a
-                href="https://www.instagram.com/yaser_medical"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
+          <li>
+            <a href="https://www.instagram.com/yaser_medical" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-            <li>
-              <a
-                href="https://x.com/yaser_alammar0"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
+          <li>
+            <a href="https://x.com/yaser_alammar0" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-            <li>
-              <a
-                href="https://www.youtube.com/playlist?list=PL5x7bH-tNI8vByXx_XDHPCFGczLpUSqRl"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://wa.me/message/BT47CZIG3SE4E1"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-whatsapp"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PL5x7bH-tNI8vByXx_XDHPCFGczLpUSqRl" target="_blank"
+              class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/message/BT47CZIG3SE4E1" target="_blank" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- 
+  <!-- 
     - #BACK TO TOP
   -->
 
-    <a
-      href="#top"
-      class="back-top-btn"
-      aria-label="back to top"
-      data-back-top-btn
-    >
-      <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
-    </a>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
 
-    <!-- 
+  <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
 
-    <!-- 
+  <!-- 
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    function setLanguage(language) {
+      const elements = document.querySelectorAll('[data-lang-en], [data-lang-ar]');
+      elements.forEach(element => {
+        if (language === 'en') {
+          element.textContent = element.getAttribute('data-lang-en');
+          document.documentElement.dir = 'ltr';
+          document.getElementById('lang-en').style.display = 'none';
+          document.getElementById('lang-ar').style.display = 'inline';
+        } else if (language === 'ar') {
+          element.textContent = element.getAttribute('data-lang-ar');
+          document.documentElement.dir = 'rtl';
+          document.getElementById('lang-en').style.display = 'inline';
+          document.getElementById('lang-ar').style.display = 'none';
+        }
+      });
+    }
+
+    // Initially set the language based on the default lang attribute in HTML
+    if (document.documentElement.lang === 'en') {
+      setLanguage('en');
+    } else {
+      setLanguage('ar');
+    }
+  </script>
+</body>
+
 </html>
